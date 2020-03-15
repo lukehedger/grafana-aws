@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:6.4.1
+    ports:
+      - 3000:3000
+    volumes:
+      - type: volume
+        source: grafana
+        target: /var/lib/grafana
+
+volumes:
+  grafana:
