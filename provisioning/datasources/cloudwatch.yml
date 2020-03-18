@@ -1,0 +1,9 @@
+apiVersion: 1
+
+datasources:
+  - name: Cloudwatch
+    type: cloudwatch
+    isDefault: true
+    jsonData:
+      authType: keys
+      defaultRegion: eu-west-2
