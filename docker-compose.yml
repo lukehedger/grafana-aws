@@ -10,6 +10,8 @@ services:
       - type: volume
         source: grafana
         target: /var/lib/grafana
+      - ./provisioning:/etc/grafana/provisioning
+      - ./dashboards:/var/lib/grafana/dashboards
 
 volumes:
   grafana:
