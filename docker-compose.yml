@@ -4,10 +4,7 @@ services:
   grafana:
     container_name: grafana
     environment:
-      - GF_AWS_PROFILES=default
-      - GF_AWS_default_ACCESS_KEY_ID=
-      - GF_AWS_default_SECRET_ACCESS_KEY=
-      - GF_AWS_default_REGION=eu-west-2
+      - AWS_PROFILE=grafana
     image: grafana/grafana:6.4.1
     ports:
       - 3000:3000
@@ -17,6 +14,7 @@ services:
         target: /var/lib/grafana
       - ./provisioning:/etc/grafana/provisioning
       - ./dashboards:/var/lib/grafana/dashboards
+      - $HOME/.aws/credentials:/usr/share/grafana/.aws/credentials
 
 volumes:
   grafana:

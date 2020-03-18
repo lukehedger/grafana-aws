@@ -5,5 +5,5 @@ datasources:
     type: cloudwatch
     isDefault: true
     jsonData:
-      authType: keys
+      authType: credentials
       defaultRegion: eu-west-2
