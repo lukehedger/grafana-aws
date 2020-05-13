@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+
+# Log files
+*.log
+
+# Dependencies
+node_modules
+
+# Generated files
+aws-fargate/bin/**/*.d.ts
+aws-fargate/bin/**/*.js
+aws-fargate/cdk.out
+aws-fargate/lib/**/*.d.ts
+aws-fargate/lib/**/*.js

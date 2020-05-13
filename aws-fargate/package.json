@@ -1,0 +1,21 @@
+{
+  "name": "aws-fargate",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "yarn build && cdk deploy",
+    "synth": "cdk synth"
+  },
+  "devDependencies": {
+    "@types/node": "14.0.1",
+    "aws-cdk": "1.38.0",
+    "typescript": "3.9.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "1.38.0",
+    "@aws-cdk/aws-ecs": "1.38.0",
+    "@aws-cdk/aws-ecs-patterns": "1.38.0",
+    "@aws-cdk/core": "1.38.0"
+  }
+}
