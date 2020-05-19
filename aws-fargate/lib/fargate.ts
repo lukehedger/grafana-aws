@@ -18,10 +18,10 @@ export class GrafanaFargate extends Stack {
 
     new ApplicationLoadBalancedFargateService(this, "GrafanaFargateService", {
       cluster: cluster,
-      cpu: 256,
+      cpu: 1024,
       desiredCount: 1,
       listenerPort: 3000,
-      memoryLimitMiB: 512,
+      memoryLimitMiB: 2048,
       publicLoadBalancer: true,
       serviceName: "GrafanaFargateService",
       taskImageOptions: {
