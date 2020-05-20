@@ -5,7 +5,7 @@ services:
     container_name: grafana
     environment:
       - AWS_PROFILE=grafana
-    image: grafana/grafana:6.4.1
+    image: grafana/grafana:7.0.0
     ports:
       - 3000:3000
     volumes:
