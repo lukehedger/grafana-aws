@@ -15,3 +15,9 @@ Go to http://localhost:3000 and use the credentials `admin/admin`
 ```sh
 make stop
 ```
+
+## Dashboards
+
+### Lambda
+
+![Lambda dashboard](https://raw.githubusercontent.com/monitoringartist/grafana-aws-cloudwatch-dashboards/master/aws-lambda/aws-lambda.png)
